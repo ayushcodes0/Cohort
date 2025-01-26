@@ -28,7 +28,7 @@ interface User {
     firstName: string,
     lastName: string,
     age: number,
-    email: string
+    email?: string
 }
 
 function illegal(user: User):void{
