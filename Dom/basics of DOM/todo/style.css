@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container{
+    min-height: 80vh;
+    width: 80vw;
+    background-color: rgb(24, 24, 24);
+    border-radius: 6px;
+}
+
+.todo-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.title input, .desc input {
+    width: 300px;
+    padding: 8px 12px;
+    background-color:  rgb(18, 18, 18);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+
+.add-btn button{
+    width: 80px;
+    padding: 8px 12px;
+    background-color: rgb(0, 136, 255);
+    border: none;
+    border-radius: 6px;
+}
+
+.add-btn button:hover{
+    cursor: pointer;
+}
+
+.todo-outputs{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.todo-outputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+}
+
+.output-title{
+    color: rgb(159, 159, 159);
+}
+.output-description{
+    color: rgb(112, 112, 112);
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center; 
+    justify-content: center;
+}
+
+.outer button{
+    margin-top: 10px;
+    background-color: rgb(3, 175, 3);
+    outline: none;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.outer button:hover{
+    cursor: pointer;
+}

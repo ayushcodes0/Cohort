@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest</title>
+    <script>
+        let timeout;
+        function debounceCalculateInterest(){
+            clearTimeout(timeout);
+            timeout = setTimeout(()=>{
+                calculateInterest();
+            },1000)
+        }
+        async function calculateInterest(){
+            const p = document.getElementById("p").value;
+            const r = document.getElementById("r").value;
+            const t = document.getElementById("t").value;
+
+            const response = await fetch(`http://localhost:3000/interest?principle=${p}&rate=${r}&time=${t}`);
+            const data = await response.json();
+
+            // adding dynamically into frontend;
+            const total = document.getElementById("total");
+            const interest = document.getElementById("interest");
+
+            total.innerHTML = data.total;
+            interest.innerHTML = data.interest;
+        }
+    </script>
+</head>
+<body>
+    <div class="prt">
+        <input id="p" oninput="debounceCalculateInterest()" type="number" placeholder="Enter Principle Amount">
+        <input id="r" oninput="debounceCalculateInterest()" type="number" placeholder="Enter Rate">
+        <input id="t" oninput="debounceCalculateInterest()" type="number" placeholder="Enter Time">
+    </div>
+    <div id="show" class="showcase">
+        total: <div id="total"></div >
+        interest: <div id="interest"></div>
+    </div>
+</body>
+</html>

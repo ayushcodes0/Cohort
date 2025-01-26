@@ -1,0 +1,60 @@
+
+.fetch-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fetch-btn button{
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(0, 136, 255);
+    color: white;
+    font-weight: 600;
+}
+
+.person-details{
+    padding: 30px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+
+.persons-card{
+    width: 250px;
+    height: 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.persons-card .img{
+    height: 180px;
+    width: 100%;
+}
+
+.persons-card .img img{
+    object-fit: cover;
+    height: 180px;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.name{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.birthday{
+    padding: 0px 10px;
+}
+
+
+
+
+
+
+   

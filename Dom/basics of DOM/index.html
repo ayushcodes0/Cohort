@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script>
+        function populateDiv(){
+            const first_num = document.getElementById("first-number");
+            const second_num = document.getElementById("second-number");
+            const button = document.getElementById("sum-btn");
+            const p = document.getElementById("p");
+            p.innerHTML = Number(first_num.value) + Number(second_num.value);
+        }
+        
+    </script>
+    
+</head>
+<body style="background-color: rgb(44, 44, 44);">
+    <input id="first-number" type="number" placeholder="Enter first number">
+    <input id="second-number" type="number" placeholder="Enter Second number">
+    <button onclick="populateDiv()" id="sum-btn">Calculate Sum</button>
+    <p style="color: white;" id="p"></p>
+    
+    
+</body>
+</html>
