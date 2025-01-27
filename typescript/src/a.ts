@@ -44,7 +44,7 @@ const user1 = {
     firstName: "Ayush",
     lastName: "Singh",
     age: 18,
-    email: "a@a.com"
+    email: "abc@a.com"
 }
 
 illegal(user1);
