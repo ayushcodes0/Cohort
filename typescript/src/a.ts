@@ -48,5 +48,31 @@ const user1 = {
 }
 
 
+// Interfaces and Classess
+// Not very usefull but good to know
+
+interface Person{
+    name: string,
+    age: number,
+    greet(phrase: string): void;
+}
+
+class Employee implements Person{
+    name: string
+    age: number
+
+    constructor(s: string, a: number){
+        this.name = s;
+        this.age = a;
+    }
+
+    greet(phrase: string){
+        console.log(`${phrase} ${this.name}`);
+    }
+}
+
+const e = new Employee("Ayush", 21);
+console.log(e.name);
+
 
 illegal(user1);
