@@ -47,11 +47,6 @@ const user1 = {
     email: "abc@a.com"
 }
 
-const user2 = {
-    firstName: "Utkarsh",
-    lastName: "Singh",
-    age: 17,
-    email: "abcd@gmail.com"
-}
 
-illegal(user2);
+
+illegal(user1);
