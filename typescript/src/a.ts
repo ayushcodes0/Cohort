@@ -76,3 +76,66 @@ console.log(e.name);
 
 
 illegal(user1);
+
+// Popular interview question is difference between type and interfaces
+// Main difference between type and interfaces is interface can be use to implement classes but type can't be use to implement classes.
+
+type user = {
+    firstName: string,
+    lastName: string,
+    age: number
+}
+
+type congoType = string | number;
+
+function wish(congo: congoType){
+    console.log("the id is : " ,congo);
+}
+
+wish(34);
+wish("Id");
+
+
+// this is how you define array in typescript
+
+interface family{
+    mother: string,
+    father: string,
+    child: string,
+    totalPerson: number
+}
+
+function filterFamily(arr: family[]){
+    // All the filter logic here
+}
+
+// enum
+
+enum Direction{
+    up,
+    down,
+    left,
+    right
+}
+
+function keyPressed(button: Direction){
+    if(button == Direction.up){
+        console.log("Going Up...");
+    }
+}
+
+
+keyPressed(Direction.up);
+
+// Generic
+
+function identity<T>(user: T){
+    console.log(user);
+}
+
+identity<string>("user1");
+identity<number>(1);
+identity<number>(2.22);
+
+// Import and Export in typescript
+
