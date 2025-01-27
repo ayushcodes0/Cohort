@@ -54,4 +54,4 @@ const user2 = {
     email: "abcd@gmail.com"
 }
 
-illegal(user1);
+illegal(user2);
