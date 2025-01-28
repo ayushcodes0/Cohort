@@ -139,3 +139,10 @@ identity<number>(2.22);
 
 // Import and Export in typescript
 
+export const add = (a: number, b: number): number => a + b;
+export const subtract = (a: number, b: number): number => a - b;
+
+export interface Calculator {
+  add: (a: number, b: number) => number;
+  subtract: (a: number, b: number) => number;
+}
