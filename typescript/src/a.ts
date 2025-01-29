@@ -26,9 +26,11 @@ interface User {
 
 function illegal(user: User):void{
     if(user.age < 18){
+        
         console.log("You Can't Vote");
     }
     else{
+
         console.log("You can Vote");
     }
 }
