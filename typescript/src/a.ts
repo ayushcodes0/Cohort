@@ -1,13 +1,6 @@
 const x: number = 1;
 console.log(x);
 
-
-function printName(firstName:string){
-    console.log(firstName)
-}
-
-printName("Ayush");
-
 function addition(num1:number, num2:number): number{
     return num1 + num2;
 }
